@@ -29,10 +29,10 @@ public abstract class RestCallback<T> implements AsyncCallback<T> {
     }
 
     public void onError(Response response) {
-        onFailure(new RestException("An error occured. Status : " + response.getStatusCode()));
+        onFailure(RestExceptionTranslator.createStatusException(response.getStatusCode(), response.getStatusText(), response.getText()));
     }
 
     public void onFailure(Throwable throwable) {
-        throw new RestException(throwable);
+        throw new RequestException(throwable);
     }
 }

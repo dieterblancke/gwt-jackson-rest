@@ -56,7 +56,7 @@ class RestRequestCallback<R> implements RequestCallback {
             if (null != callback) {
                 callback.onError(response);
             } else {
-                throw new RestException("An error occured. Status : " + response.getStatusCode());
+                throw RestExceptionTranslator.createStatusException(response.getStatusCode(), response.getStatusText(), response.getText());
             }
         }
     }
@@ -69,7 +69,7 @@ class RestRequestCallback<R> implements RequestCallback {
     @Override
     public void onError(Request request, Throwable exception) {
         if (null == callback) {
-            throw new RestException(exception);
+            throw new RequestException(exception);
         } else {
             callback.onFailure(exception);
         }

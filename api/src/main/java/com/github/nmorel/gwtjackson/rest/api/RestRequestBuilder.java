@@ -362,7 +362,7 @@ public class RestRequestBuilder<B, R> {
         try {
             return builder.send();
         } catch ( RequestException e ) {
-            throw new RestException( e );
+            throw new com.github.nmorel.gwtjackson.rest.api.RequestException( e );
         }
     }
 
