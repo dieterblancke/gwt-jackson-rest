@@ -21,7 +21,7 @@
 
     <groupId>com.github.nmorel.gwtjackson</groupId>
     <artifactId>gwt-jackson-rest</artifactId>
-    <version>0.6.0</version>
+    <version>0.6.1</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -80,15 +80,15 @@
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/nmorel/gwt-jackson-rest/issues</url>
+        <url>https://github.com/dieterblancke/gwt-jackson-rest/issues</url>
     </issueManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- the api has to be compatible with minimal jdk version supported by GWT -->
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 
         <!-- Plugins version -->
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
@@ -97,11 +97,11 @@
         <maven-surefire-plugin.version>2.17</maven-surefire-plugin.version>
         <maven-deploy-plugin.version>2.8.1</maven-deploy-plugin.version>
         <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
-        <gwt-maven-plugin.version>2.7.0</gwt-maven-plugin.version>
+        <gwt-maven-plugin.version>2.10.0</gwt-maven-plugin.version>
 
         <!-- Dependencies version -->
-        <gwt.version>2.7.0</gwt.version>
-        <gwt-jackson.version>0.10.0</gwt-jackson.version>
+        <gwt.version>2.10.0</gwt.version>
+        <gwt-jackson.version>0.15.4</gwt-jackson.version>
         <javapoet.version>1.0.0</javapoet.version>
         <junit.version>4.12</junit.version>
     </properties>

@@ -19,7 +19,7 @@
   <parent>
     <artifactId>gwt-jackson-rest</artifactId>
     <groupId>com.github.nmorel.gwtjackson</groupId>
-    <version>0.6.0</version>
+    <version>0.6.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
@@ -48,6 +48,12 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>gwt-jackson-rest-api</artifactId>
       <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gwtproject</groupId>
+      <artifactId>gwt-user</artifactId>
+      <version>2.10.0</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 
